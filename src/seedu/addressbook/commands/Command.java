@@ -15,6 +15,8 @@ public class Command {
     protected AddressBook addressBook;
     protected List<? extends ReadOnlyPerson> relevantPersons;
     private int targetIndex = -1;
+    protected static CommandResult secondPreviousCommand;
+    protected static CommandResult previousCommand;
 
     /**
      * @param targetIndex last visible listing index of the target person
@@ -66,5 +68,10 @@ public class Command {
 
     public void setTargetIndex(int targetIndex) {
         this.targetIndex = targetIndex;
+    }
+
+    public static void updateCommandHistory(CommandResult commandResult) {
+        secondPreviousCommand = previousCommand;
+        previousCommand = commandResult;
     }
 }
