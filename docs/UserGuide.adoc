@@ -131,6 +131,11 @@ Views the 2nd person in the address book.
 `view 1` +
 Views the 1st person in the results of the `find` command.
 
+==View results of previous command : `previous`
+
+Displays the results of the previous command.
+Format: `previous`
+
 == View all details of a person : `viewall`
 
 Displays all details (including private details) of the specified person. +
