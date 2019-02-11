@@ -85,6 +85,7 @@ public class Main {
             String userCommandText = ui.getUserCommand();
             command = new Parser().parseCommand(userCommandText);
             CommandResult result = executeCommand(command);
+            Command.updateCommandHistory(result);
             recordResult(result);
             ui.showResultToUser(result);
 
