@@ -30,6 +30,9 @@
 || exit: Exits the program.
 || Example: exit
 || ===================================================
+|| Enter command: || [Command entered:  previous]
+|| No previous command is present
+|| ===================================================
 || Enter command: || [Command entered:  delete 1]
 || The person index provided is invalid
 || ===================================================
@@ -296,6 +299,9 @@
 || Enter command: || [Command entered:  list]
 || 
 || 0 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  previous]
+|| Address book has been cleared!
 || ===================================================
 || Enter command: || [Command entered:  exit]
 || Exiting Address Book as requested ...

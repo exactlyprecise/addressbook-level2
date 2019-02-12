@@ -6,6 +6,13 @@
   sfdfd
 
 ##########################################################
+# Using previous without previous commands
+##########################################################
+
+  #should show message that no previous commands yet
+  previous
+
+##########################################################
 # commands using list index before any listing created
 ##########################################################
 
@@ -147,6 +154,13 @@
   # clears all
   clear
   list
+
+##########################################################
+# test previous command
+##########################################################
+
+  # previous command was clear
+  previous
 
 ##########################################################
 # test exit command
